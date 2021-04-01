@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body, html {
+    height:100%;
+}
+.backg-img{
+    background: url(images/Hi,%20there1.png);
+    width: 100%;
+    background-size: contain;
+  background-repeat: no-repeat;
+    min-height: 650px;
+}
+/* Navigation */
+.project .navbar{
+    background-color: #000;
+}
+.contact .navbar{
+    background-color: #000;
+}
+.navbar{
+    color:#fff;
+    justify-content: space-around;
+    margin-bottom: 0 !important;
+    height:80px;
+    border-radius: 0px !important;
+}
+.navbar ul{
+    list-style-type: none;
+    margin-left: 6%;
+}
+.navbar li{
+    display: inline-block;
+    padding: 25px 40px;
+    align-items: center;
+    font-size: 25px;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #E84A5F;
+    text-decoration: none;
+}
+
+
+.responsive{
+    width:100%;
+    height: auto;
+}
+h1{
+    margin-top: 40px !important;
+}
+.story{
+    display: flex;
+    margin: 30px 100px;
+}
+.right-story{
+    letter-spacing: 4%;
+    flex:1;
+    width:400px;
+    margin: 20px 80px;
+    text-align: left;
+    padding:20px;
+}
+.left-story img{
+    letter-spacing: 4%;
+    flex:1;
+    margin: 20px 80px;
+    text-align: center;
+    padding:20px;
+    
+}
+.right-story p{
+    font-size: 20px;
+    
+    letter-spacing: 4%;
+    line-height: 30px;
+}
+.btn-lg{
+    background-color: #E84A5F !important;
+    border-color: #E84A5F !important;
+}
+.btn-lg:hover{
+    opacity:70% !important;
+}
+.skills{
+    display: flex;
+    margin: 40px 100px;
+}
+.left,.right{
+    letter-spacing: 4%;
+    flex:1;
+    width:300px;
+    margin: 20px 80px;
+    text-align: center;
+    padding:20px;
+  box-shadow: 5px 10px 18px #888888;
+    background-color: #f1f1f3;
+}
+
+.skills p{
+    font-size: 20px;
+    
+    letter-spacing: 4%;
+    line-height: 30px;
+}
+.technologies{
+    width:50%;
+    margin-left: 25%;
+}
+
+
+/*project*/
+h1, h2, h3{
+    text-align: center;
+
+}
+.container-fluid{
+    margin: 5px 50px !important;
+}
+.col-sm-4{
+    padding: 25px !important;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 20px;
+    width:30% !important;
+
+}
+.col-sm-4:hover{
+    filter:brightness(90%);
+}
+.col-sm-4 img {
+   object-fit:fill;
+   width: 100%;
+   height: 200px;
+}
+            
+           footer{
+    height:200px;
+    background-color: #000; 
+    color:#fff;
+    text-align: center;
+    font-size: 30px;
+               padding: 4%;
+}
+.icons{
+    height:100px;
+    padding:2%;
+}
+.icons a:hover{
+    opacity: 70%;
+}
+.icons img{
+    height:40px;
+    width:40px;
+    padding: 5px;
+}
+
+@media only screen and (max-width:760px){
+    .backg-img{
+        min-height: 200px;
+        background:none;
+    }
+    .navbar{
+        flex-direction: column;
+                background-color:#000;
+        min-height: 170px !important;
+
+}
+  
+
+    .logo{
+        width:100%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .navbar li{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    .col-sm-4{
+        width:auto !important;
+    }
+    .skills,.story{
+        flex-direction: column;
+        margin: 30px;
+    }
+    .left,.right,.left-story,.right-story{
+    width:100%;
+    margin: 0;
+    margin-top: 40px;
+    padding:20px;
+}
+    .left-story img{
+        margin:0;
+    }
+   
+    
+}
+/*Contact page*/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E84A5F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+opacity: 70%;
+}
+
+/* Style the container/contact section */
+.container1 {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 30px;
+    margin-left: 25%;
+   box-shadow: 5px 5px 15px #888888;
+    margin-bottom: 100px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+      margin-left: 0;
+  }
+}
+/*projects*/
